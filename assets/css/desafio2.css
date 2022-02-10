@@ -1,0 +1,111 @@
+
+:root {
+	--primary-color: rgb(0, 240, 180);
+	--secondary-color:rgb(25, 197, 154);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--secondary-color);
+	font-family: 'Montserrat', sans-serif;
+}
+.titulo {
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	font-size: 2rem;
+	color: white;
+}
+
+
+.alignCenter {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	max-width: 30rem;
+	background-color: rgb(255, 255, 255);
+	padding-bottom: 1.5rem;
+	min-height: 20rem;
+	border-radius: 40px;
+	border: 10px solid var(--primary-color);
+}
+.container {
+	width: 100%;
+	justify-content: center;
+}
+
+.container h2{
+	text-align: center;
+	font-size: 1.8rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.form label {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 1.5rem;
+	margin-left:20px;
+	font-weight: bold;
+}
+
+.form input {
+	width: 90%;
+	height: 2rem;
+	border-radius: 20px;
+	outline: none;
+	border: 4px solid var(--primary-color);
+	font-size: 1.1rem;
+	text-indent: 10px;
+	margin-left:20px ;
+}
+
+.form input:focus {
+	box-shadow: 10px 10px 10px rgb(20, 146, 119);
+	}
+
+.resultado {
+padding: 20px;
+text-align: center;
+font-size: 1.1rem;
+font-weight: bold
+} 
+
+.botoes {
+	display: flex;
+	justify-content: space-evenly;
+}
+.container button {
+	width: 12rem;
+	height: 3rem;
+	font-size: 1.4rem;
+	border-radius: 50px;
+	outline: none;
+	border: 4px solid var(--primary-color);
+	box-shadow: 10px 10px rgb(16, 90, 74);
+	transition: all 300ms ease-in-out;
+	margin-right: 10px;
+}
+
+.container button a {
+	text-decoration: none;
+	color: black;
+}
+
+.container button:hover {
+	background-color: var(--primary-color);
+	cursor: pointer;
+}
+
+.container button:active {
+	transform: scale(0.9);
+}
